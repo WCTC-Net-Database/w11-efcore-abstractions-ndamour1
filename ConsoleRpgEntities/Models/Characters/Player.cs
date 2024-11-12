@@ -11,6 +11,7 @@ namespace ConsoleRpgEntities.Models.Characters
         public string Name { get; set; }
         public int Health { get; set; }
         public virtual IEnumerable<Ability> Abilities { get; set; }
+        public virtual Equipment? EquipmentList { get; set; }
 
         public async void Attack(ITargetable target)
         {
