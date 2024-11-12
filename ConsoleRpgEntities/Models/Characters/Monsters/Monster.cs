@@ -9,6 +9,7 @@ namespace ConsoleRpgEntities.Models.Characters.Monsters
         public int Health { get; set; }
         public int AggressionLevel { get; set; }
         public string MonsterType { get; set; }
+        public virtual Equipment? EquipmentList { get; set; }
 
         protected Monster()
         {
@@ -16,6 +17,5 @@ namespace ConsoleRpgEntities.Models.Characters.Monsters
         }
 
         public abstract void Attack(ITargetable target);
-
     }
 }
