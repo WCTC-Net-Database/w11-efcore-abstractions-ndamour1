@@ -7,6 +7,7 @@ public interface IPlayer
 {
     int Id { get; set; }
     string Name { get; set; }
+    int Health { get; set; }
 
     IEnumerable<Ability> Abilities { get; set; }
 
