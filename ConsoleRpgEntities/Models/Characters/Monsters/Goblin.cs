@@ -18,7 +18,7 @@ namespace ConsoleRpgEntities.Models.Characters.Monsters
                 int defense = 0;
         
                 // Damage calculations
-                decimal damage = (roll + attack) / ((2 + 100) / 100);
+                decimal damage = (roll + attack) / ((target.EquipmentList.Armor.Defense + 100) / 100);
         
                 // Total damage
                 int totalDamage = (int)Math.Round(damage, MidpointRounding.AwayFromZero);
