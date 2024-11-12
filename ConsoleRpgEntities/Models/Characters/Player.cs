@@ -19,8 +19,8 @@ namespace ConsoleRpgEntities.Models.Characters
             int roll = rand.Next(1, 7);
         
             // Equipment stats
-            int attack = 3;
-            int defense = 2;
+            int attack = EquipmentList.Weapon.Attack;
+            int defense = EquipmentList.Armor.Defense;
         
             // Damage calculations
             decimal damage = (roll + attack) / ((0 + 100) / 100);
